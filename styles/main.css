@@ -1,0 +1,68 @@
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins-500";
+  src: url("../fonts/Poppins-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins-600";
+  src: url("../fonts/Poppins-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+:root {
+  --font-family: "Poppins", sans-serif;
+  --font-family-500: "Poppins-500", sans-serif;
+  --font-family-600: "Poppins-600", sans-serif;
+  --primary: #263238;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  transition: color 0.3s ease, background-color 0.3s ease;
+  font-family: var(--font-family);
+}
+
+a {
+  text-decoration: none;
+}
+
+
+p {
+  font-size: 1rem;
+}
+
+h1,
+h2 {
+  color: var(--primary);
+}
+
+button {}
+
+button:hover {}
+
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+}
