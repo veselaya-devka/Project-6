@@ -1,0 +1,87 @@
+.container {
+  /* max-width: 1258px; */
+  /* grid-template-columns: repeat(var(--xl-cols), auto) */
+  grid-auto-rows: 13px;
+}
+
+.sidebar,
+.menu_button {
+  display: none;
+}
+
+.header {
+  grid-column: 1 / 13;
+  grid-row: 3 / span 3;
+  justify-content: space-between;
+}
+
+.header_logo a {
+  font-size: 2rem;
+}
+
+.header_ul {
+  display: flex;
+  align-items: center;
+}
+
+.header_ul li {
+  white-space: nowrap;
+  padding: 0 1rem;
+}
+
+.header_ul li a {
+  font-family: var(--font-family-500);
+  font-size: 1.2rem;
+  color: var(--primary);
+}
+
+.header_button {
+  font-family: var(--font-family);
+  font-size: 24px;
+  color: #000;
+  border: 2px solid var(--primary);
+  border-radius: 5px;
+  width: 16%;
+  padding: 0.6rem 0;
+}
+
+.get_started {
+  display: flex;
+  grid-column: 1 / 13;
+  grid-row: 8 / span 21;
+  justify-content: space-between;
+}
+
+.get_started .text {
+  display: flex;
+  flex-direction: column;
+  padding-top: 1rem;
+  width: 39%;
+}
+
+.get_started .text h1.variant1 {
+  display: block;
+  text-align: left;
+  line-height: 1.3;
+  font-size: 3.54rem;
+}
+
+.get_started .text p {
+  font-size: 1.33rem;
+  margin-top: 1.8rem;
+  line-height: 1.6;
+}
+
+.get_started .text button {
+  margin-top: 3.3rem;
+  align-self: flex-start;
+  font-size: 2rem;
+  padding: 1.7rem 6.5rem;
+  border-radius: 15px;
+}
+
+.get_started img {
+  width: 48.4%;
+  height: inherit;
+  object-fit: cover;
+}

@@ -5,67 +5,90 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Project 6</title>
   <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/xl.css" media="(min-width: 993px)">
+  <!-- <link rel="stylesheet" href="styles/lg.css" media="(768px< width<992px)">
+  <link rel="stylesheet" href="styles/md.css" media="(576px< width<767px)">
+  <link rel="stylesheet" href="styles/sm.css" media="(321px< width<575px)"> -->
+  <link rel="stylesheet" href="styles/xs.css" media="(280px < width < 320px)">
 </head>
 
 <body>
-  <input type="checkbox" id="menuToggle" class="menu_checkbox"><!-- Скрытый чекбокс для открытия меню -->
+  <div class="main">
+    <input type="checkbox" id="menuToggle" class="menu_checkbox"><!-- Скрытый чекбокс для открытия меню -->
 
-  <div class="container">
-    <div class="header">
-      <div class="header_logo">
-        <a href="">Brit<span style="color: #939393;">lex</span></a>
+    <div class="container">
+      <div class="header">
+        <div class="header_logo">
+          <a href="">Brit<span style="color: #939393;">lex</span></a>
+        </div>
+        <label for="menuToggle" class="menu_button"></label>
+        <ul class="header_ul">
+          <li><a href="">Home</a></li>
+          <li><a href="">Skills</a></li>
+          <li><a href="">About Us</a></li>
+          <li><a href="">Pricing</a></li>
+          <li><a href="">Contacts</a></li>
+        </ul>
+        <button class="header_button">Let’s Talk</button>
       </div>
-      <label for="menuToggle" class="menu_button"></label>
-      <ul class="header_ul">
+
+      <div class="get_started">
+        <div class="text">
+          <h1 class="variant1">
+            Learn<br />
+            Any Foreign<br />
+            Language
+          </h1>
+          <h1 class="variant2">
+            Learn Any Foreign Language
+          </h1>
+          <h1 class="variant3">
+            Learn Any<br />
+            Foreign Language
+          </h1>
+          <p>With our teachers who write a program for each student, you will be able to make your first sketch after
+            the first lesson.</p>
+          <button class="main_button">Get started</button>
+        </div>
+        <img src="img/Learning languages-bro 1.svg" alt="get_started">
+      </div>
+
+      <!-- <h1 class="skills_h1">Skills</h1>
+      <div class="skills">
+        <img src="img/2.svg" alt="skills" width="213px">
+        <h2>Speaking</h2>
+        <div class="text">
+
+          <p>Improve your English skills and<br>confidence. Live classes and interactive<br>lessons online. 20% extra
+            free
+            for<br>a
+            limited time only</p>
+          <p>Learn English online and improve your skills through our high-quality courses and resources – all designed
+            for
+            adult language learners.</p>
+        </div>
+        <button class="main_button">Learn more</button>
+      </div> -->
+    </div>
+
+    <div class="sidebar">
+      <div class="sidebar_head">
+        <div class="header_logo">
+          <a href="">Brit<span style="color: #939393;">lex</span></a>
+        </div>
+        <label for="menuToggle" class="close_menu"></label>
+      </div>
+      <ul class="sidebar_ul">
         <li><a href="">Home</a></li>
         <li><a href="">Skills</a></li>
         <li><a href="">About Us</a></li>
         <li><a href="">Pricing</a></li>
         <li><a href="">Contacts</a></li>
       </ul>
-      <button class="header_button">Let’s Talk</button>
-    </div>
-    <div class="get_started">
-      <img src="img/Learning languages-bro 1.svg" alt="get_started">
-      <h1>Learn Any<br>Foreign Language</h1>
-      <p>With our teachers who write a program<br>for each student, you will be able to make<br>your first sketch after
-        the first lesson.</p>
-      <button class="main_button">Get started</button>
+      <button class="sidebar_button">Let’s Talk</button>
     </div>
   </div>
 
-  <div class="sidebar">
-    <div class="sidebar_head">
-      <div class="header_logo">
-        <a href="">Brit<span style="color: #939393;">lex</span></a>
-      </div>
-      <label for="menuToggle" class="close_menu"></label>
-    </div>
-    <ul class="sidebar_ul">
-      <li><a href="">Home</a></li>
-      <li><a href="">Skills</a></li>
-      <li><a href="">About Us</a></li>
-      <li><a href="">Pricing</a></li>
-      <li><a href="">Contacts</a></li>
-    </ul>
-    <button class="sidebar_button">Let’s Talk</button>
-  </div>
-
-  <!-- <div class="skills">
-    <div class="container"></div>
-  </div>
-  <div class="about_us">
-    <div class="container"></div>
-  </div>
-  <div class="pricing">
-    <div class="container"></div>
-  </div>
-  <div class="contact_us">
-    <div class="container"></div>
-  </div>
-  <div class="footer">
-    <div class="container"></div>
-  </div> -->
 </body>
 
 </html>
