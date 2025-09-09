@@ -6,18 +6,19 @@
   <title>Project 6</title>
   <link rel="stylesheet" href="styles/main.css">
   <link rel="stylesheet" href="styles/xl.css" media="(min-width: 993px)">
-  <!-- <link rel="stylesheet" href="styles/lg.css" media="(768px< width<992px)">
-  <link rel="stylesheet" href="styles/md.css" media="(576px< width<767px)">
-  <link rel="stylesheet" href="styles/sm.css" media="(321px< width<575px)"> -->
-  <link rel="stylesheet" href="styles/xs.css" media="(280px < width < 320px)">
+  <link rel="stylesheet" href="styles/lg.css" media="(min-width: 768px) and (max-width: 992px)">
+  <link rel="stylesheet" href="styles/md.css" media="(min-width: 576px) and (max-width: 767px)">
+  <link rel="stylesheet" href="styles/sm.css" media="(min-width: 321px) and (max-width: 575px)">
+  <link rel="stylesheet" href="styles/xs.css" media="(min-width: 280px) and (max-width: 320px)">
 </head>
 
 <body>
-  <div class="main">
-    <input type="checkbox" id="menuToggle" class="menu_checkbox"><!-- Скрытый чекбокс для открытия меню -->
+  <input type="checkbox" id="menuToggle" class="menu_checkbox"><!-- Скрытый чекбокс для открытия меню -->
 
+
+  <div class="header">
     <div class="container">
-      <div class="header">
+      <div class="header_block">
         <div class="header_logo">
           <a href="">Brit<span style="color: #939393;">lex</span></a>
         </div>
@@ -32,7 +33,12 @@
         <button class="header_button">Let’s Talk</button>
       </div>
 
-      <div class="get_started">
+    </div>
+  </div>
+
+  <div class="get_started">
+    <div class="container">
+      <div class="get_started_block">
         <div class="text">
           <h1 class="variant1">
             Learn<br />
@@ -47,15 +53,21 @@
             Foreign Language
           </h1>
           <p>With our teachers who write a program for each student, you will be able to make your first sketch after
-            the first lesson.</p>
+            the
+            first lesson.</p>
           <button class="main_button">Get started</button>
         </div>
-        <img src="img/Learning languages-bro 1.svg" alt="get_started">
+
+        <img src="img/Learning languages-bro 1.svg" alt="get_started" class="get_started">
       </div>
 
-      <!-- <h1 class="skills_h1">Skills</h1>
-      <div class="skills">
-        <img src="img/2.svg" alt="skills" width="213px">
+    </div>
+  </div>
+
+  <!-- <div class="skills">
+      <div class="container">
+        <h1 class="skills_h1">Skills</h1> -->
+  <!-- <img src="img/2.svg" alt="skills" width="213px">
         <h2>Speaking</h2>
         <div class="text">
 
@@ -67,27 +79,28 @@
             for
             adult language learners.</p>
         </div>
-        <button class="main_button">Learn more</button>
-      </div> -->
-    </div>
+        <button class="main_button">Learn more</button> -->
+  <!-- </div>
 
-    <div class="sidebar">
-      <div class="sidebar_head">
-        <div class="header_logo">
-          <a href="">Brit<span style="color: #939393;">lex</span></a>
-        </div>
-        <label for="menuToggle" class="close_menu"></label>
+    </div> -->
+
+  <div class="sidebar">
+    <div class="sidebar_head">
+      <div class="header_logo">
+        <a href="">Brit<span style="color: #939393;">lex</span></a>
       </div>
-      <ul class="sidebar_ul">
-        <li><a href="">Home</a></li>
-        <li><a href="">Skills</a></li>
-        <li><a href="">About Us</a></li>
-        <li><a href="">Pricing</a></li>
-        <li><a href="">Contacts</a></li>
-      </ul>
-      <button class="sidebar_button">Let’s Talk</button>
+      <label for="menuToggle" class="close_menu"></label>
     </div>
+    <ul class="sidebar_ul">
+      <li><a href="">Home</a></li>
+      <li><a href="">Skills</a></li>
+      <li><a href="">About Us</a></li>
+      <li><a href="">Pricing</a></li>
+      <li><a href="">Contacts</a></li>
+    </ul>
+    <button class="sidebar_button">Let’s Talk</button>
   </div>
+  <!-- </div> -->
 
 </body>
 

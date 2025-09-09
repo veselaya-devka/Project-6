@@ -1,0 +1,91 @@
+html,
+body {
+  width: 100vw;
+}
+
+.container {
+  padding: 0 4.8%;
+}
+
+.header {
+  padding: 1.4rem 0px;
+}
+
+.header_block {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header_ul,
+.header_button {
+  display: none;
+}
+
+.header_logo {
+  padding-top: 1rem;
+}
+
+.header_logo a {
+  font-size: 30px;
+}
+
+.get_started {
+  display: flex;
+  justify-content: space-between;
+}
+
+.get_started_block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.get_started .text {
+  display: flex;
+  flex-direction: column;
+  width: 99%;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+.get_started h1.variant1 {
+  padding-top: 2.8rem;
+  display: block;
+  text-align: left;
+  line-height: 1.27;
+  font-size: 36px;
+}
+
+.get_started h1.variant1::after {
+  height: 18.5%;
+  content: '';
+  background-image: url(../img/1.svg);
+  background-size: contain;
+  display: block;
+  position: absolute;
+  top: 7rem;
+  left: 33.5%;
+  aspect-ratio: 1 / 1;
+}
+
+.get_started p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.get_started button {
+  margin-top: 0.65rem;
+  border-radius: 5px;
+  width: 236px;
+  height: 65px;
+  font-size: 18px;
+}
+
+.get_started img.get_started {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding-top: 1.6rem;
+  padding-left: 4%;
+}

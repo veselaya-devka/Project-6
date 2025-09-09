@@ -1,0 +1,96 @@
+html,
+body {
+  width: 100vw;
+}
+
+.container {
+  padding: 0 5.4%;
+}
+
+.header {
+  padding: 1.4rem 0px;
+}
+
+.header_block {
+  padding-bottom: .7rem;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header_ul,
+.header_button {
+  display: none;
+}
+
+.header_logo {
+  padding-top: 1rem;
+}
+
+.header_logo a {
+  font-size: 30px;
+}
+
+.menu_button {
+  width: 42px;
+  background-size: cover;
+  height: 24px;
+  align-self: end;
+  margin-right: 3.5%;
+  margin-bottom: 0.6rem;
+}
+
+.get_started {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.get_started .text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+.get_started_block {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+.get_started img {
+  width: 85%;
+  object-fit: contain;
+  position: relative;
+  bottom: 1.3rem;
+}
+
+.get_started h1 {
+  text-align: center;
+  line-height: 1.4;
+}
+
+.get_started p {
+  text-align: center;
+  width: 86vw;
+  line-height: 1.4;
+  font-size: 16px;
+  padding-top: 0.5rem;
+}
+
+.get_started button {
+  margin-top: 1.35rem;
+  font-size: 18px;
+  width: 305px;
+  height: 75px;
+}
+
+.get_started h1.variant2 {
+  display: block;
+  font-size: 34px;
+}
+
+.get_started .container {
+  justify-items: center;
+}
