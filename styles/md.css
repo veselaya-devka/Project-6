@@ -60,7 +60,7 @@ body {
 .get_started h1.variant1::after {
   height: 18.5%;
   content: '';
-  background-image: url(../img/1.svg);
+  background-image: url(../img/lamp.svg);
   background-size: contain;
   display: block;
   position: absolute;

@@ -94,7 +94,7 @@ h2 {
 }
 
 button.main_button {
-  padding: 0.9rem 3.03rem;
+  /* padding: 0.9rem 3.03rem; */
   border-radius: 5px;
   background: var(--primary);
   color: white;
