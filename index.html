@@ -6,8 +6,8 @@
   <title>Project 6</title>
   <link rel="stylesheet" href="styles/main.css">
   <link rel="stylesheet" href="styles/xl.css" media="(min-width: 993px)">
-  <link rel="stylesheet" href="styles/lg.css" media="(min-width: 768px) and (max-width: 992px)">
-  <link rel="stylesheet" href="styles/md.css" media="(min-width: 576px) and (max-width: 767px)">
+  <link rel="stylesheet" href="styles/lg.css" media="(min-width: 766px) and (max-width: 992px)">
+  <link rel="stylesheet" href="styles/md.css" media="(min-width: 574px) and (max-width: 767px)">
   <link rel="stylesheet" href="styles/sm.css" media="(min-width: 321px) and (max-width: 575px)">
   <link rel="stylesheet" href="styles/xs.css" media="(min-width: 280px) and (max-width: 320px)">
 </head>
@@ -16,107 +16,185 @@
   <input type="checkbox" id="menuToggle" class="menu_checkbox"><!-- Скрытый чекбокс для открытия меню -->
 
 
-  <div class="header">
-    <div class="container">
+  <div class="container">
+    <div class="header" id="home">
       <div class="header_block">
-        <div class="header_logo">
+        <div class="logo">
           <a href="">Brit<span style="color: #939393;">lex</span></a>
         </div>
         <label for="menuToggle" class="menu_button"></label>
         <ul class="header_ul">
-          <li><a href="">Home</a></li>
-          <li><a href="">Skills</a></li>
-          <li><a href="">About Us</a></li>
-          <li><a href="">Pricing</a></li>
-          <li><a href="">Contacts</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#aboutUs">About Us</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#contactUs">Contacts</a></li>
         </ul>
         <button class="header_button">Let’s Talk</button>
       </div>
-
     </div>
-  </div>
 
-  <div class="get_started">
-    <div class="container">
-      <div class="get_started_block">
-        <div class="text">
-          <h1 class="variant1">
-            Learn<br />
-            Any Foreign<br />
-            Language
-          </h1>
-          <h1 class="variant2">
-            Learn Any Foreign Language
-          </h1>
-          <h1 class="variant3">
-            Learn Any<br />
-            Foreign Language
-          </h1>
-          <p>With our teachers who write a program for each student, you will be able to make your first sketch after
-            the
-            first lesson.</p>
-          <button class="main_button">Get started</button>
-        </div>
-
-        <img src="img/Learning languages-bro 1.svg" alt="get_started" class="get_started">
+    <div class="get_started">
+      <div class="left">
+        <h1>Learn
+          <span><img src="img/1920/lamp.svg" alt="lamp" class="lamp"></span>
+          Any Foreign
+          Language
+        </h1>
+        <p>With our teachers who write a program for
+          each student, you will be able to make your
+          first sketch after the first lesson.</p>
+        <button>Get started</button>
       </div>
-
+      <div class="right">
+        <div class="img"></div>
+      </div>
     </div>
-  </div>
 
-  <div class="skills">
-    <div class="container">
-      <h1 class="skills_h1">Skills</h1>
+    <div class="skills" id="skills">
+      <h2>Skills</h2>
       <div class="cards">
-        <div class="card speaking">
-          <img src="img/Speaking.svg" alt="Speaking">
+        <div class="card">
+          <!-- <div class="img"></div> -->
+          <img src="img/1920/speaking.svg" alt="">
           <div class="text">
-            <h2>Speaking</h2>
-            <p>Improve your English skills and confidence. Live classes and interactive lessons online. 20% extra free
-              for
-              a limited time only</p>
-            <p>Learn English online and improve your skills through our high-quality courses and resources – all
-              designed
-              for adult language learners.</p>
-            <button class="main_button">Learn more</button>
+            <h3>Speaking</h3>
+            <p>Improve your English skills and confidence.
+              Live classes and interactive lessons online.
+              20% extra free for a limited time only<br><br>
+
+              Learn English online and improve your
+              skills through our high-quality courses
+              and resources – all designed for adult language learners.</p>
+            <button>Learn more</button>
           </div>
         </div>
-        <div class="card writing">
-          <img src="img/Writing.svg" alt="Writing">
+        <div class="card">
+          <!-- <div class="img"></div> -->
+          <img src="img/1920/writing.svg" alt="">
           <div class="text">
-            <h2>Writing</h2>
-            <p>One of the most important and extensive areas of natural science, the science that studies substances,
-              also
-              their composition </p>
-            <button class="main_button">Learn more</button>
+            <h3>Writing</h3>
+            <p>One of the most important and extensive
+              areas of natural science, the science that
+              studies substances, also their composition </p>
+            <button>Learn more</button>
           </div>
         </div>
-        <div class="card reading">
-          <img src="img/Reading.svg" alt="Reading">
+        <div class="card">
+          <!-- <div class="img"></div> -->
+          <img src="img/1920/reading.svg" alt="">
           <div class="text">
-            <h2>Reading</h2>
-            <p>perception and response actions of the user resulting from the use and/or upcoming use of the product,
-              system or service</p>
-            <button class="main_button">Learn more</button>
+            <h3>Reading</h3>
+            <p>perception and response actions of the user
+              resulting from the use and/or upcoming use
+              of the product, system or service</p>
+            <button>Learn more</button>
           </div>
         </div>
-        <div class="card listening">
-          <img src="img/Listening.svg" alt="Listening">
+        <div class="card">
+          <!-- <div class="img"></div> -->
+          <img src="img/1920/listening.svg" alt="">
           <div class="text">
-            <h2>Listening</h2>
-            <p>Here you can find activities to practise your listening skills. Listening will help you to improve your
-              understanding</p>
-            <button class="main_button">Learn more</button>
+            <h3>Listening</h3>
+            <p>Here you can find activities to practise
+              your listening skills. Listening will help you
+              to improve your understanding </p>
+            <button>Learn more</button>
           </div>
         </div>
       </div>
     </div>
 
+    <div class="aboutUs" id="aboutUs">
+      <div class="left">
+        <h2>About Us</h2>
+        <p>The model offers a framework for discussing problems related to the user's experience, as well as possible
+          ways and means of solving them. Application development begins at the top level (strategy), where the future
+          software product is described quite abstractly from the point of view of the expectations of both users and
+          the customer.
+        </p>
+        <div class="numbers">
+          <div class="number">800<span>Pupils</span></div>
+          <div class="number">18<span>Teachers</span></div>
+          <div class="number">6<span>Foreign languages</span></div>
+        </div>
+      </div>
+      <div class="right">
+        <img src="img/1920/aboutUs.svg" alt="aboutUs">
+      </div>
+    </div>
+
+    <div class="pricing" id="pricing">
+      <h2>Pricing</h2>
+      <div class="price_cards">
+        <div class="price_card">
+          <div class="img">
+            <img src="img/1920/pricing1.svg" alt="pricing1">
+          </div>
+          <div class="text">
+            <h3>Self-study online course</h3>
+            <p>Start learning English online in live classes
+              with qualified EC teachers and students
+              from all over the world.</p>
+            <div class="price">£5.99<span> per month</span></div>
+          </div>
+        </div>
+        <div class="price_card">
+          <div class="img">
+            <img src="img/1920/pricing2.svg" alt="pricing1">
+          </div>
+          <div class="text">
+            <h3>Live online classes</h3>
+            <p>Interactive group classes with expert
+              teachers. Free 7-day trial</p>
+            <div class="price">£12.99<span>per month</span></div>
+          </div>
+        </div>
+        <div class="price_card">
+          <div class="img">
+            <img src="img/1920/pricing3.svg" alt="pricing1">
+          </div>
+          <div class="text">
+            <h3>Personal Tuition</h3>
+            <p>Online one-to-one English tutoring – enjoy
+              our first session for only $1</p>
+            <div class="price">£20.99<span> per month</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="contactUs" id="contactUs">
+      <div class="left">
+        <img src="img/1920/contactUs.svg" alt="contactUs">
+      </div>
+      <div class="right">
+        <h2>Contact Us</h2>
+        <p>Discover your current English level by taking our free online English test.Sign up to our newsletter for
+          learning tips and free resources</p>
+        <form action="">
+          <input type="text" placeholder="Enter Your E-mail">
+          <button>Subscribe</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="logo">
+        <a href="">Brit<span style="color: #939393;">lex</span></a>
+      </div>
+      <ul>
+        <li><a href="">Terms and Conditions</a></li>
+        <li><a href="">Privacy Policy</a></li>
+        <li><a href="">Cookie Policy</a></li>
+      </ul>
+    </div>
   </div>
+
 
   <div class="sidebar">
     <div class="sidebar_head">
-      <div class="header_logo">
+      <div class="logo">
         <a href="">Brit<span style="color: #939393;">lex</span></a>
       </div>
       <label for="menuToggle" class="close_menu"></label>
@@ -130,7 +208,6 @@
     </ul>
     <button class="sidebar_button">Let’s Talk</button>
   </div>
-  <!-- </div> -->
 
 </body>
 
