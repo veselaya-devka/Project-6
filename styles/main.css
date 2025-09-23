@@ -62,12 +62,16 @@ body {
 .container {
   background-color: rgba(255, 255, 255, .2);
   width: 84%;
-  padding: 0 5vw;
+  padding: 0 6.7vw;
   position: relative;
   z-index: 1;
   margin: 0 auto;
 }
 
+/* .container>div {
+  background-color: rgba(255, 255, 255, .1);
+}
+ */
 button {
   color: #fff;
   background: var(--primary);
@@ -100,6 +104,14 @@ h3 {
 
 h1 {
   color: #000;
+}
+
+h2 {
+  font-size: 48px;
+}
+
+h3 {
+  font-size: 30px;
 }
 
 h2,
@@ -272,7 +284,7 @@ ul {
 .get_started .right .img {
   background-image: url(../img/1920/1.svg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   height: 100%;
   margin-top: 0.4rem;
 }
@@ -304,9 +316,6 @@ ul {
   gap: 6.2rem;
 }
 
-.skills h2 {
-  font-size: 48px;
-}
 
 .skills .cards {
   display: grid;
@@ -333,9 +342,6 @@ ul {
   grid-column: span 2;
 }
 
-.skills .cards .card h3 {
-  font-size: 30px;
-}
 
 .skills .cards .card .text {
   padding: 1.1rem 5%;
@@ -463,7 +469,7 @@ ul {
 .aboutUs .left {}
 
 .aboutUs .left h2 {
-  font-size: 48px;
+  line-height: 0.8;
 }
 
 .aboutUs .left p {
@@ -494,6 +500,7 @@ ul {
 .number span {
   font-size: 20px;
   color: var(--primary);
+  text-align: center;
 }
 
 .aboutUs .right {
@@ -514,9 +521,6 @@ ul {
   margin-top: 12rem;
 }
 
-.pricing h2 {
-  font-size: 48px;
-}
 
 .price_cards {
   display: grid;
@@ -556,22 +560,15 @@ ul {
   height: 21.5rem;
 }
 
-.price_card:nth-child(1) .text {
+.price_card:nth-child(2) .text {
   padding-left: 7%;
 }
 
-.price_card:nth-child(2) .text {
-  padding-left: 9%;
-}
-
 .price_card:nth-child(3) .text {
-  padding-left: 0;
+  padding-left: 2%;
   width: 92%;
 }
 
-.price_card h3 {
-  font-size: 30px;
-}
 
 .price_card p {
   font-size: 20px;
@@ -597,7 +594,7 @@ ul {
 }
 
 .price_card:nth-child(1) img {
-  margin-left: 6%;
+  margin-left: 1%;
   width: 79%;
 }
 
@@ -615,6 +612,7 @@ ul {
 .price_card:nth-child(3) .img img {
   width: 92%;
   height: 100%;
+  padding-left: 10%;
 }
 
 .contactUs {
@@ -627,7 +625,6 @@ ul {
 
 .contactUs .left {
   width: 71%;
-  padding-left: 1%;
 }
 
 .contactUs .left img {}
@@ -638,10 +635,6 @@ ul {
   width: 95%;
   gap: 3rem;
   padding-top: 2rem;
-}
-
-.contactUs .right h2 {
-  font-size: 48px;
 }
 
 .contactUs .right p {
@@ -658,7 +651,7 @@ ul {
 .contactUs .right form input {
   border: 1px solid #8f95a5;
   border-radius: 10px;
-  width: 56%;
+  width: 58.5%;
   height: 5rem;
   font-size: 16px;
   padding-left: 4%;
@@ -673,16 +666,14 @@ input:focus {
 .contactUs .right form button {
   border: 1px solid var(--primary);
   border-radius: 10px;
-  width: 33%;
+  width: 34%;
   height: 5rem;
   font-size: 20px;
   font-family: var(--font-family-500);
 }
 
 .footer {
-  width: 95%;
-  margin: 0 auto;
-  padding-top: 2rem;
+  padding-top: 2.2rem;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
