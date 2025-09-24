@@ -142,7 +142,7 @@ p {
 
 .skills .cards .card button {
   padding: 0;
-  width: 196px;
+  width: 20vw;
   height: 57px;
 }
 
@@ -305,4 +305,14 @@ p {
 
 .footer ul li a {
   font-size: 16px;
+}
+
+@media screen and (max-width: 820px) {
+  .get_started h1 span::after {
+    right: -6%;
+  }
+
+  .header_ul {
+    gap: 19px;
+  }
 }
