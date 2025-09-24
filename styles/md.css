@@ -1,5 +1,5 @@
 .container {
-  padding: 0 5%;
+  padding: 0 4% 0 5%;
 }
 
 .header {
@@ -50,6 +50,12 @@ p {
 
 }
 
+.get_started h1 span::after {
+  right: 44px;
+  width: 23%;
+  top: 47%;
+}
+
 .get_started .left p {
   font-size: 16px;
   width: 100%;
@@ -62,18 +68,13 @@ p {
   padding: 4.8% 19.5%;
 }
 
-.lamp {
-  right: 12%;
-  top: 47%;
-  width: 23%;
-}
-
 .get_started .right {
   width: 47%;
 }
 
 .get_started .right .img {
-  background-size: cover;
+  background-image: url(../img/767/1.svg);
+  background-size: contain;
   height: 98%;
   margin-top: 0;
 }
@@ -84,7 +85,8 @@ p {
 }
 
 .skills .cards {
-  gap: 10px;
+  gap: 9px;
+  grid-template-rows: 1fr .46fr;
 }
 
 .skills .cards .card {
@@ -92,6 +94,12 @@ p {
   height: auto !important;
   padding-left: 3%;
   padding-right: 3%;
+  padding-bottom: 1.8rem;
+}
+
+.skills .cards .card:nth-child(4) {
+  padding-left: 4.5%;
+  padding-right: 0;
 }
 
 .skills .cards .card .text {
@@ -104,56 +112,248 @@ p {
   /* margin-top: 0 !important; */
 }
 
+.skills .cards .card:nth-child(1) .text {
+  margin-top: 1.5rem;
+}
+
+.skills .cards .card:nth-child(4) .text {
+  width: 70%;
+  padding: 1.3rem 0px;
+  gap: 0.8rem;
+}
+
 .skills .cards .card button {
   font-size: 16px;
   /* margin-top: 0 !important; */
   padding: 0;
-  width: 178px;
+  width: 90%;
   height: 50px;
 }
 
-.skills .cards .card img {
-  /* height: auto !important;
-  width: 100% !important; */
-  object-fit: contain !important;
+.skills .cards .card:nth-child(4) button {
+  width: 71%;
 }
 
-.skills .cards .card:first-child {
-  padding: 0;
-}
-
-.skills .cards .card:nth-child(2) {
-  padding: 0;
-}
-
-.skills .cards .card:nth-child(3) {
-  padding: 0;
-}
-
-.skills .cards .card:nth-child(4) {
-  padding: 0;
-}
-
-.skills .cards .card:nth-child(1) img {
-  width: 100%;
+.skills .cards .card:nth-child(1) .img {
   margin-top: 2rem;
-  height: 13rem;
+  height: 13.5rem;
 }
 
-.skills .cards .card:nth-child(2) img {
-  align-self: end;
-  height: 12.4rem;
+.skills .cards .card:nth-child(2) .img {
+  align-self: center;
   width: 100%;
+  margin-top: 1rem;
+  height: 12rem;
+}
+
+.skills .cards .card:nth-child(3) .img {
+  width: 100%;
+  margin-left: 1%;
+}
+
+.skills .cards .card:nth-child(4) .img {
+  width: 54%;
+  height: 82%;
+  background-position-y: bottom;
+}
+
+.skills .cards .card:nth-child(2) .text {
+  padding-left: 6%;
+  width: 95%;
+}
+
+.skills .cards .card:nth-child(3) .text {
+  padding-left: 10%;
+}
+
+.skills .cards .card:nth-child(3) h3 {
+  line-height: 0.8;
+}
+
+.skills .cards .card:nth-child(1) p {
+  width: 99%;
   margin-top: 1rem;
 }
 
-.skills .cards .card:nth-child(3) img {
+.skills .cards .card:nth-child(3) p {
+  margin-top: 1.2rem;
+}
+
+.skills .cards .card:nth-child(1) button {
+  margin-top: 2.7rem;
+}
+
+.skills .cards .card:nth-child(2) button {
+  margin-top: 1.3rem;
+}
+
+.skills .cards .card:nth-child(3) button {
+  margin-top: 1.3rem;
+}
+
+.aboutUs {
   margin-top: 0;
-  width: 100%;
+  align-items: center;
+}
+
+.aboutUs .left {
+  padding-bottom: 0;
+  gap: 1.66rem;
+  padding-top: 5rem;
+}
+
+.aboutUs .left p {
+  font-size: 14px;
+}
+
+.number {
+  font-size: 22px;
+  gap: 1rem;
+}
+
+.number span {
+  font-size: 13px;
+}
+
+.number:nth-child(2) {
+  margin-left: 19%;
+}
+
+.number:nth-child(3) {
+  margin-left: 11%;
+}
+
+.aboutUs .right {
+  height: 24rem;
+  width: 43%;
+}
+
+.aboutUs .right .img {
+  margin-top: 5.5rem;
+  margin-left: 0;
+}
+
+.pricing {
+  margin-top: 6.4rem;
+  gap: 2.8rem;
+}
+
+.price_card .text {
+  height: 14rem;
+}
+
+.price_card .img,
+.price_card .text {
+  width: 93%;
+  padding-top: 0.2rem;
+}
+
+.price_card .img {
   height: 13rem;
 }
 
-.skills .cards .card:nth-child(4) img {
-  width: 48% !important;
-  height: 84% !important;
+.price_card:nth-child(1) .img {
+  margin-left: 0;
+}
+
+.price_card:nth-child(2) .img {
+  margin-top: 2rem;
+  margin-left: 3%;
+  height: 10rem;
+}
+
+.price_card:nth-child(3) .img {
+  height: 13.5rem;
+}
+
+.price {
+  font-size: 22px;
+  height: 45px;
+  width: 27vw;
+}
+
+.price_card:nth-child(2) .text {
+  padding-left: 4%;
+}
+
+.price_card:nth-child(3) .text {
+  padding-left: 4%;
+}
+
+.price_card p {
+  font-size: 14px;
+  height: auto;
+}
+
+.contactUs {
+  margin-top: 0;
+  padding-bottom: 8.9rem;
+}
+
+.contactUs .left {
+  width: 50%;
+}
+
+.contactUs .left .img {
+  background-image: url(../img/767/contactUs.svg);
+  width: 100%;
+  background-position-y: bottom;
+  height: 111%;
+  background-size: contain;
+}
+
+.contactUs .right {
+  padding-top: 5.6rem;
+  gap: 0.4rem;
+  width: 85%;
+}
+
+.contactUs .right p {
+  font-size: 14px;
+  width: 92%;
+}
+
+.contactUs .right form {
+  gap: 6px;
+  margin-top: 1.2rem;
+}
+
+.contactUs .right form input {
+  font-size: 12px;
+  border-radius: 5px;
+  width: 64.5%;
+  height: 3rem;
+}
+
+.contactUs .right form button {
+  font-size: 13px;
+  height: 3rem;
+  border-radius: 5px;
+  width: 33%;
+}
+
+.footer {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  align-items: center;
+}
+
+.footer ul li a {
+  font-size: 13px;
+}
+
+@media screen and (max-width: 700px) {
+  .get_started h1 span::after {
+    right: 0;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .price {
+    font-size: 18px;
+  }
+
+  .price span {
+    font-size: 15px;
+  }
 }
