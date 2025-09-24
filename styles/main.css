@@ -249,7 +249,7 @@ ul {
 .get_started {
   display: flex;
   flex-direction: row;
-  gap: 57px;
+  gap: 4%;
   justify-content: space-between;
 }
 
@@ -286,7 +286,7 @@ ul {
   background-repeat: no-repeat;
   background-size: contain;
   height: 100%;
-  margin-top: 0.4rem;
+  margin-top: 0.5rem;
 }
 
 .get_started h1 {
@@ -302,11 +302,23 @@ ul {
   display: block;
 }
 
-.lamp {
+.get_started h1 span::after {
+  position: absolute;
+  background-image: url(../img/1920/lamp.svg);
+  content: "";
+  display: inline-block;
+  background-size: cover;
+  right: -41%;
+  top: 40%;
+  width: 31%;
+  aspect-ratio: 1 / 1;
+}
+
+/* .lamp {
   position: absolute;
   right: -41%;
   top: 40%;
-}
+} */
 
 .skills {
   margin-top: 9.2rem;
@@ -331,7 +343,7 @@ ul {
   flex-direction: column;
   padding-left: 5.1%;
   padding-right: 5.1%;
-  padding-bottom: 1.7rem;
+  padding-bottom: 2.5rem;
 }
 
 .skills .cards .card:first-child {
@@ -342,10 +354,14 @@ ul {
   grid-column: span 2;
 }
 
+.skills .cards .card .img {
+  background-repeat: no-repeat;
+  background-size: contain;
+}
 
 .skills .cards .card .text {
-  padding: 1.1rem 5%;
-  height: 50%;
+  padding-left: 5%;
+  /* height: 50%; */
 }
 
 .skills .cards .card button {
@@ -355,71 +371,12 @@ ul {
   padding: 1rem 3vw;
 }
 
-.skills .cards .card:nth-child(1) img {
-  width: 100%;
-  margin-top: 2.4rem;
-  height: 24.5rem;
-}
-
-.skills .cards .card:nth-child(1) p {
-  margin-top: 1.5rem;
-  line-height: 1.5;
-  width: 97%;
-}
-
-.skills .cards .card:nth-child(1) button {
-  margin-top: 2.3rem;
-}
-
-.skills .cards .card:nth-child(2) img {
-  align-self: end;
-  height: 16.5rem;
-  width: 76%;
-  object-fit: cover;
-  object-position: top;
-}
-
-
-.skills .cards .card:nth-child(2) .text {
-  padding-top: 0;
-  margin-top: 0.6rem;
-}
-
-.skills .cards .card:nth-child(2) p {
-  line-height: 1.5;
-  margin-top: 0.5rem;
-}
-
-.skills .cards .card:nth-child(2) button {
-  margin-top: 1.7rem;
-}
-
 .skills .cards .card:nth-child(3) {
   padding-left: 0;
 }
 
-.skills .cards .card:nth-child(3) img {
-  margin-top: 0.7rem;
-  width: 89%;
-  height: 15.5rem;
-}
-
-.skills .cards .card:nth-child(3) p {
-  margin-top: 0.4rem;
-  line-height: 1.5;
-}
-
-.skills .cards .card:nth-child(3) .text {
-  padding-left: 9%;
-}
-
-.skills .cards .card:nth-child(3) button {
-  margin-top: 2rem;
-}
-
-
 .skills .cards .card:nth-child(4) {
-  height: 21rem;
+  height: 21.5rem;
   flex-direction: row-reverse;
   align-items: center;
   justify-content: space-between;
@@ -427,9 +384,45 @@ ul {
   padding-bottom: 0;
 }
 
-.skills .cards .card:nth-child(4) img {
-  width: 48%;
-  height: 84%;
+.skills .cards .card:nth-child(1) .img {
+  width: 100%;
+  margin-top: 2.4rem;
+  height: 24.5rem;
+  aspect-ratio: 1/1;
+  background-image: url(../img/1920/speaking.svg);
+}
+
+.skills .cards .card:nth-child(2) .img {
+  align-self: end;
+  width: 75%;
+  height: 17rem;
+  background-image: url(../img/1920/writing.svg);
+}
+
+.skills .cards .card:nth-child(3) .img {
+  width: 89%;
+  height: 17rem;
+  background-image: url(../img/1920/reading.svg);
+  background-position-y: center;
+}
+
+.skills .cards .card:nth-child(4) .img {
+  width: 47%;
+  height: 100%;
+  background-position-y: center;
+  background-image: url(../img/1920/listening.svg);
+}
+
+.skills .cards .card:nth-child(1) .text {
+  margin-top: 1.2rem;
+}
+
+.skills .cards .card:nth-child(2) .text {
+  padding-top: 0;
+}
+
+.skills .cards .card:nth-child(3) .text {
+  padding-left: 9%;
 }
 
 .skills .cards .card:nth-child(4) .text {
@@ -438,8 +431,36 @@ ul {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 66%;
-  padding-bottom: 0.7rem;
+  height: 63%;
+}
+
+.skills .cards .card:nth-child(1) p {
+  margin-top: 1.5rem;
+  line-height: 1.5;
+  width: 92%;
+}
+
+.skills .cards .card:nth-child(2) p {
+  line-height: 1.5;
+  margin-top: 0.5rem;
+}
+
+.skills .cards .card:nth-child(3) p {
+  margin-top: 0.4rem;
+  line-height: 1.5;
+}
+
+.skills .cards .card:nth-child(1) button {
+  margin-top: 2.1rem;
+}
+
+.skills .cards .card:nth-child(2) button {
+  margin-top: 2rem;
+}
+
+
+.skills .cards .card:nth-child(3) button {
+  margin-top: 2rem;
 }
 
 .skills .cards .card:nth-child(4) button {
@@ -454,19 +475,15 @@ ul {
   margin-top: 12.5rem;
 }
 
-.aboutUs .left,
-.aboutUs .right {
-  width: 48%;
-}
 
 .aboutUs .left {
   display: flex;
   flex-direction: column;
   padding-bottom: 2.7rem;
   gap: 2.7rem;
+  width: 48%;
 }
 
-.aboutUs .left {}
 
 .aboutUs .left h2 {
   line-height: 0.8;
@@ -504,13 +521,19 @@ ul {
 }
 
 .aboutUs .right {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+  height: 35rem;
+  width: 42%;
 }
 
-.aboutUs .right img {
+.aboutUs .right .img {
+  background-image: url(../img/1920/aboutUs.svg);
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  background-size: auto;
   margin-top: 3.5rem;
+  margin-left: 9%;
+  background-size: contain;
 }
 
 .pricing {
@@ -539,34 +562,50 @@ ul {
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
+  padding-top: 0.7rem;
 }
 
 .price_card .img,
 .price_card .text {
   width: 100%;
   display: flex;
-  ;
+
 }
 
 .price_card .img {
   height: 19rem;
 }
 
-.price_card .img img {
-  object-fit: contain;
+.price_card .img {
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.price_card:nth-child(3) {
+  margin-left: 2%;
+}
+
+.price_card:nth-child(1) .img {
+  background-image: url(../img/1920/pricing1.svg);
+  margin-left: 7%;
+}
+
+.price_card:nth-child(2) .img {
+  background-image: url(../img/1920/pricing2.svg);
+  margin-top: 1rem;
+  height: 18rem;
+  margin-left: 6%;
 }
 
 .price_card:nth-child(3) .img {
-  height: 21.5rem;
+  background-image: url(../img/1920/pricing3.svg);
+  background-position-x: center;
+  height: 21rem;
+
 }
 
 .price_card:nth-child(2) .text {
   padding-left: 7%;
-}
-
-.price_card:nth-child(3) .text {
-  padding-left: 2%;
-  width: 92%;
 }
 
 
@@ -593,48 +632,31 @@ ul {
   margin-left: 4%;
 }
 
-.price_card:nth-child(1) img {
-  margin-left: 1%;
-  width: 79%;
-}
-
-.price_card:nth-child(2) .img {
-  padding-left: 7%;
-  padding-top: 1.5rem;
-}
-
-.price_card:nth-child(2) .img img {
-  width: 92%;
-  height: 100%;
-
-}
-
-.price_card:nth-child(3) .img img {
-  width: 92%;
-  height: 100%;
-  padding-left: 10%;
-}
-
 .contactUs {
   display: flex;
   flex-direction: row;
   margin-top: 16rem;
   padding-bottom: 7rem;
-  padding-bottom: 7.75rem;
+  padding-bottom: 10rem;
 }
 
 .contactUs .left {
   width: 71%;
 }
 
-.contactUs .left img {}
+.contactUs .left .img {
+  width: inherit;
+  aspect-ratio: 1/1;
+  background-image: url(../img/1920/contactUs.svg);
+  background-repeat: no-repeat;
+}
 
 .contactUs .right {
   display: flex;
   flex-direction: column;
   width: 95%;
-  gap: 3rem;
-  padding-top: 2rem;
+  gap: 2.6rem;
+  padding-top: 2.6rem;
 }
 
 .contactUs .right p {
@@ -646,6 +668,7 @@ ul {
   display: flex;
   flex-direction: row;
   gap: 12px;
+  margin-top: 0.5rem;
 }
 
 .contactUs .right form input {
@@ -673,11 +696,12 @@ input:focus {
 }
 
 .footer {
-  padding-top: 2.2rem;
+  padding-top: 1.9rem;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
   padding-bottom: 4rem;
+  border-top: 1px solid #c4c4c4;
 }
 
 .footer ul {
@@ -701,6 +725,7 @@ input:focus {
   padding: 0 5px;
 }
 
+
 @media screen and (max-width: 1600px) {
   .container {
     width: 90%;
@@ -717,5 +742,20 @@ input:focus {
   .container {
     width: 100%;
     padding: 0 3%;
+  }
+}
+
+@media screen and (max-width: 1125px) {
+
+  .skills .cards .card:nth-child(2) .img,
+  .skills .cards .card:nth-child(3) .img {
+    height: 13rem;
+  }
+}
+
+@media screen and (max-width: 1010px) {
+  .get_started h1 span::after {
+    right: -23%;
+    width: 23%;
   }
 }

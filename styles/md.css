@@ -1,3 +1,159 @@
+.container {
+  padding: 0 5%;
+}
+
+.header {
+  padding: 39px 0;
+}
+
 .menu_button {
   display: inline-block;
+  background-image: url(../img/767/menu.svg);
+  margin-top: 0.6rem;
+  width: 30px;
+  height: 100%;
+}
+
+.logo a {
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+p {
+  font-size: 13px
+}
+
+.get_started {
+  gap: 0;
+}
+
+.get_started h1 {
+  font-size: 36px;
+}
+
+.header_ul,
+.header_button {
+  display: none;
+}
+
+.get_started .left {
+  padding-top: 1.6rem;
+  gap: 1.2rem;
+  width: 49%;
+
+}
+
+.get_started .left p {
+  font-size: 16px;
+  width: 100%;
+}
+
+.get_started .left button {
+  font-size: 18px;
+  border-radius: 5px;
+  margin-top: 0.8rem;
+  padding: 4.8% 19.5%;
+}
+
+.lamp {
+  right: 12%;
+  top: 47%;
+  width: 23%;
+}
+
+.get_started .right {
+  width: 47%;
+}
+
+.get_started .right .img {
+  background-size: cover;
+  height: 98%;
+  margin-top: 0;
+}
+
+.skills {
+  margin-top: 4.6rem;
+  gap: 3.4rem;
+}
+
+.skills .cards {
+  gap: 10px;
+}
+
+.skills .cards .card {
+  gap: 0;
+  height: auto !important;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+.skills .cards .card .text {
+  height: auto !important;
+  /* margin-top: 0 !important;
+  padding: 0 5%; */
+}
+
+.skills .cards .card .text>* {
+  /* margin-top: 0 !important; */
+}
+
+.skills .cards .card button {
+  font-size: 16px;
+  /* margin-top: 0 !important; */
+  padding: 0;
+  width: 178px;
+  height: 50px;
+}
+
+.skills .cards .card img {
+  /* height: auto !important;
+  width: 100% !important; */
+  object-fit: contain !important;
+}
+
+.skills .cards .card:first-child {
+  padding: 0;
+}
+
+.skills .cards .card:nth-child(2) {
+  padding: 0;
+}
+
+.skills .cards .card:nth-child(3) {
+  padding: 0;
+}
+
+.skills .cards .card:nth-child(4) {
+  padding: 0;
+}
+
+.skills .cards .card:nth-child(1) img {
+  width: 100%;
+  margin-top: 2rem;
+  height: 13rem;
+}
+
+.skills .cards .card:nth-child(2) img {
+  align-self: end;
+  height: 12.4rem;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.skills .cards .card:nth-child(3) img {
+  margin-top: 0;
+  width: 100%;
+  height: 13rem;
+}
+
+.skills .cards .card:nth-child(4) img {
+  width: 48% !important;
+  height: 84% !important;
 }
