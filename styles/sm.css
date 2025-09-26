@@ -1,3 +1,476 @@
+.container {
+  padding: 0 5.5%;
+}
+
 .menu_button {
   display: inline-block;
+  background-image: url(../img/575/menu.svg);
+  margin-top: 1rem;
+  width: 49px;
+  height: 100%;
+  margin-right: 2.5%;
+}
+
+.logo a {
+  font-size: 30px;
+}
+
+.header {
+  padding: 40px 0;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+p {
+  font-size: 12px
+}
+
+.header_ul,
+.header_button {
+  display: none;
+}
+
+.get_started {
+  flex-direction: column-reverse;
+}
+
+.get_started h1 {
+  font-size: 34px;
+}
+
+.get_started h1 span::after {
+  display: none;
+}
+
+.get_started .right,
+.get_started .left {
+  width: 100%;
+  align-items: center;
+}
+
+.get_started .left {
+  text-align: center;
+  gap: 1.5rem;
+}
+
+.get_started .right .img {
+  margin: 0 auto;
+  height: 22.5rem;
+  background-position-x: center;
+  background-position-y: center;
+  background-image: url(../img/575/1.svg);
+  background-size: cover;
+  width: 84%;
+}
+
+.get_started h1 {
+  max-width: none;
+  width: 100%;
+  /* text-align: center; */
+}
+
+.get_started h1 span {
+  display: none;
+}
+
+.get_started .left p {
+  font-size: 16px;
+  width: 100%;
+}
+
+.get_started .left button {
+  font-size: 18px;
+  margin-top: 0.8rem;
+  padding: 4.6% 19.6%;
+  border-radius: 5px;
+}
+
+
+
+
+.skills {
+  margin-top: 6.8rem;
+  gap: 3.2rem;
+}
+
+.skills h2 {
+  padding-left: 2%;
+
+}
+
+.skills .cards {
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 5vw;
+}
+
+.skills .cards .card {
+  justify-content: space-between;
+  padding-left: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.skills .cards .card:first-child {
+  grid-row: auto;
+}
+
+.skills .cards .card:last-child {
+  grid-column: auto;
+}
+
+
+.skills .cards .card:nth-child(4) {
+  height: auto;
+  flex-direction: column;
+  display: flex;
+}
+
+
+.skills .cards .card .img {
+  height: auto !important;
+  background-size: contain;
+  width: 100%;
+  height: 36%;
+}
+
+.skills .cards .card:nth-child(1) .img {
+  background-image: url(../img/575/speaking.svg);
+  margin-top: 0;
+  width: 93%;
+  height: 36% !important;
+  margin-left: 5%;
+}
+
+.skills .cards .card:nth-child(2) .img {
+  background-image: url(../img/575/writing.svg);
+  aspect-ratio: 1 / 1;
+  align-self: center;
+  width: 82%;
+  margin-top: 2%;
+}
+
+.skills .cards .card:nth-child(3) .img {
+  background-image: url(../img/575/reading.svg);
+  width: 86%;
+  height: 40% !important;
+}
+
+.skills .cards .card:nth-child(4) .img {
+  background-image: url(../img/575/listening.svg);
+  width: 91%;
+  height: 40% !important;
+}
+
+.skills .cards .card .text {
+  height: 64%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 0 !important;
+  width: 100% !important;
+  padding-left: 9% !important;
+  gap: 0 !important;
+  justify-content: space-between;
+}
+
+.skills .cards .card:nth-child(1) .text {
+  margin-top: 4% !important;
+  padding-left: 2%;
+}
+
+.skills .cards .card:nth-child(1) p {
+  margin-top: 0;
+}
+
+.skills .cards .card:nth-child(2) p {
+  margin-top: 0;
+}
+
+.skills .cards .card:nth-child(1) button {
+  margin-top: 0.5rem;
+}
+
+
+.skills .cards .card h3 {
+  flex: 0 0 auto;
+}
+
+.skills .cards .card .text p {
+  margin-top: 0.6rem !important;
+  flex: 0 0 auto;
+}
+
+.skills .cards .card button {
+  font-size: 14px;
+  width: 94%;
+  padding: 0 !important;
+  height: 50px;
+  flex: 0 0 auto;
+  margin-bottom: 2.5rem;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.aboutUs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 7rem;
+}
+
+.aboutUs .left h2 {
+  order: 1;
+}
+
+.aboutUs .right {
+  order: 2;
+  width: 100%;
+  height: 25rem;
+}
+
+.aboutUs .right .img {
+  height: auto;
+  width: 69%;
+  aspect-ratio: 1 / 1;
+  margin: 10% auto 0;
+}
+
+.aboutUs .left p {
+  order: 3;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.numbers {
+  order: 4;
+  justify-content: center;
+  width: 93%;
+  margin-top: 2rem;
+}
+
+.number {
+  font-size: 24px;
+  gap: 0.6rem;
+}
+
+.number span {
+  font-size: 14px;
+}
+
+.aboutUs .left {
+  display: contents;
+}
+
+.pricing {
+  margin-top: 9.5rem;
+}
+
+.price_card {
+  justify-content: flex-start;
+  margin-left: 0 !important;
+}
+
+.price_card .img {
+  width: 100%;
+  margin: 0 !important;
+  background-position-x: center;
+}
+
+.price_card .img,
+.price_card .text {
+  align-items: center;
+  text-align: center;
+}
+
+.price_cards {
+  grid-template-columns: 1fr;
+  /* grid-template-rows: 1fr 1fr 1fr; */
+  gap: 4.5rem;
+}
+
+.price_card:nth-child(1) .img {
+  background-image: url(../img/575/pricing1.svg);
+  margin-left: 5%;
+}
+
+.price_card:nth-child(2) .img {
+  background-image: url(../img/575/pricing2.svg);
+  margin-top: 2rem;
+  height: 15rem;
+  margin-left: 3%;
+}
+
+.price_card:nth-child(3) .img {
+  background-image: url(../img/575/pricing3.svg);
+  height: 15rem;
+}
+
+.price_card .text {
+  padding-left: 0 !important;
+  padding-bottom: 0 !important;
+  padding-top: 1.2rem;
+  height: auto;
+  gap: 1.6rem;
+}
+
+.price_card h3 {
+  font-size: 24px;
+}
+
+.price_card p {
+  font-size: 14px;
+  width: 78%;
+  height: auto;
+}
+
+.price_card:nth-child(2) p {
+  width: 66%;
+}
+
+.price {
+  font-size: 22px;
+  width: 36vw;
+  padding: 6px 0;
+}
+
+.price span {
+  font-size: 16px;
+  margin-left: 7%;
+}
+
+.contactUs {
+  display: flex;
+  flex-direction: column;
+  margin-top: 11rem;
+  padding-bottom: 9rem;
+}
+
+.contactUs .left,
+.contactUs .right {
+  display: contents;
+  text-align: center;
+}
+
+
+.contactUs .right h2 {
+  order: 1;
+  margin-bottom: 5rem;
+}
+
+.contactUs .left .img {
+  order: 2;
+  margin: 4% auto 0;
+  width: 70%;
+  background-position-x: center;
+  background-size: contain;
+}
+
+.contactUs .right p {
+  order: 3;
+  font-size: 16px;
+  width: 92%;
+  margin: 0 auto;
+}
+
+.contactUs .right form {
+  order: 4;
+  margin-top: 3.5rem;
+  gap: 0;
+  height: 3.8rem;
+}
+
+.contactUs .right form input {
+  height: inherit;
+  font-size: 13px;
+  padding-left: 5%;
+  padding-right: 5%;
+  width: 67%;
+}
+
+.contactUs .right form button {
+  height: inherit;
+  font-size: 16px;
+  width: 40%;
+}
+
+.footer {
+  padding-bottom: 1.5rem;
+  padding-top: 1.5rem;
+  align-items: center;
+}
+
+.footer ul li a {
+  font-size: 12px;
+}
+
+@media screen and (max-width: 470px) {
+  .footer ul {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .footer ul li a::before {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .price {
+    width: 45vw;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .skills .cards .card:nth-child(1) .img {
+    height: 20% !important;
+  }
+
+  .skills .cards .card:nth-child(2) .img {
+    height: 20% !important;
+  }
+
+  .skills .cards .card:nth-child(3) .img {
+    height: 20% !important;
+  }
+
+  .skills .cards .card:nth-child(4) .img {
+    height: 20% !important;
+  }
+
+  .skills .cards .card .text {
+    height: 80%;
+  }
+
+  .skills .cards .card:nth-child(4) .text {
+    height: 80%;
+
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .skills .cards .card {
+    width: 43vw;
+  }
+
+  .skills .cards .card button {
+    width: 35vw !important;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .price {
+    width: 52vw;
+  }
+
+  .price span {
+    font-size: 14px;
+  }
 }
