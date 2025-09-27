@@ -420,6 +420,10 @@ p {
   .footer ul li a::before {
     display: none;
   }
+
+  .aboutUs .right {
+    height: 20rem;
+  }
 }
 
 @media screen and (max-width: 450px) {
@@ -429,6 +433,11 @@ p {
 }
 
 @media screen and (max-width: 400px) {
+  .get_started .right .img {
+    width: 100%;
+    background-size: contain;
+  }
+
   .skills .cards .card:nth-child(1) .img {
     height: 20% !important;
   }
@@ -451,7 +460,10 @@ p {
 
   .skills .cards .card:nth-child(4) .text {
     height: 80%;
+  }
 
+  .aboutUs .right {
+    height: 17rem;
   }
 }
 
