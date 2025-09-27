@@ -2,13 +2,36 @@
   padding: 0 4%;
 }
 
+.sidebar_button {
+  font-family: var(--font-family);
+  font-size: 20px;
+  color: #000;
+  margin-top: 5.4rem;
+  width: 100%;
+  border: 2px solid #263238;
+  border-radius: 5px;
+  height: 65px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .menu_button {
   display: inline-block;
+  width: 33.5px;
+  height: 33px;
+  background-size: contain;
+  background-repeat: no-repeat;
   background-image: url(../img/575/menu.svg);
-  margin-top: 1rem;
-  width: 33px;
-  height: 100%;
-  margin-right: 0;
+  cursor: pointer;
+  border: none;
+  position: fixed;
+  right: 5%;
+  background-color: white;
+  border-radius: 4px;
+  z-index: 99;
+  background-position-y: center;
 }
 
 .logo a {
@@ -478,6 +501,26 @@ h1:nth-child(2) {
   font-size: 11px;
   white-space: nowrap;
 }
+
+.sidebar_head .close_menu {
+  background-image: url(../img/close.svg);
+  width: 34px;
+  height: 34px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border: none;
+  background-color: transparent;
+}
+
+.sidebar ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-top: 4rem;
+}
+
+
 
 @media screen and (max-width: 305px) {
   .footer ul {

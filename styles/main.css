@@ -44,7 +44,7 @@ html,
 body {
   height: 100vh;
   width: 100%;
-  background: #263238;
+  /* background: #263238; */
   scroll-behavior: smooth;
 }
 
@@ -60,7 +60,7 @@ body {
 }
 
 .container {
-  background-color: rgba(255, 255, 255, .2);
+  /* background-color: rgba(255, 255, 255, .2); */
   width: 84%;
   padding: 0 6.7vw;
   position: relative;
@@ -193,27 +193,10 @@ ul {
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid #c4c4c4;
-  height: 90%;
-  padding-top: 0.5rem;
+  height: 10%;
+  width: 100%;
 }
 
-.sidebar_head .close_menu {
-  background-image: url(../img/Vector.svg);
-  width: 34px;
-  height: 34px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  border: none;
-  background-color: transparent;
-}
-
-.sidebar ul {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
 
 .sidebar_ul li a {
   font-family: var(--font-family-500);
@@ -224,7 +207,8 @@ ul {
   font-family: var(--font-family);
   font-size: 20px;
   color: #000;
-  margin-top: 0.4rem;
+  margin-top: 5.4rem;
+  width: 100%;
   border: 2px solid #263238;
   border-radius: 5px;
   height: 65px;
@@ -234,22 +218,38 @@ ul {
   justify-content: center;
 }
 
+
 .menu_button {
-  display: none;
+  display: inline-block;
   width: 33.5px;
-  height: 19px;
-  background-image: url(../img/button_menu.svg);
+  height: 33px;
   background-size: contain;
   background-repeat: no-repeat;
+  background-image: url(../img/575/menu.svg);
   cursor: pointer;
   border: none;
+  position: fixed;
+  right: 5%;
+  background-color: white;
+  border-radius: 4px;
+  z-index: 99;
+  background-position-y: center;
 }
 
+.menu_button.header-visible {
+  right: 5%;
+}
+
+.menu_button.header-hidden {
+  left: 1%;
+  top: 1%;
+}
 
 
 .menu_checkbox:checked~.sidebar {
   right: 0;
 }
+
 
 .get_started {
   display: flex;
