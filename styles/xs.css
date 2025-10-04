@@ -2,36 +2,8 @@
   padding: 0 4%;
 }
 
-.sidebar_button {
-  font-family: var(--font-family);
-  font-size: 20px;
-  color: #000;
-  margin-top: 5.4rem;
-  width: 100%;
-  border: 2px solid #263238;
-  border-radius: 5px;
-  height: 65px;
-  background-color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .menu_button {
   display: inline-block;
-  width: 33.5px;
-  height: 33px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-image: url(../img/575/menu.svg);
-  cursor: pointer;
-  border: none;
-  position: fixed;
-  right: 5%;
-  background-color: white;
-  border-radius: 4px;
-  z-index: 99;
-  background-position-y: center;
 }
 
 .logo a {
@@ -95,7 +67,6 @@ p {
 .get_started h1 {
   max-width: none;
   width: 100%;
-  /* text-align: center; */
 }
 
 .get_started h1 span {
@@ -143,7 +114,6 @@ h1:nth-child(2) {
 }
 
 .skills .cards {
-  /* grid-template-rows: repeat(4, 1fr); */
   grid-template-columns: 1fr;
   gap: 21px;
   width: 98%;
@@ -192,7 +162,6 @@ h1:nth-child(2) {
 .skills .cards .card:nth-child(1) .img {
   background-image: url(../img/320/speaking.svg);
   margin-top: 5%;
-  /* margin-left: 0; */
 }
 
 .skills .cards .card:nth-child(2) .img {
@@ -360,8 +329,6 @@ h1:nth-child(2) {
 
 .price_cards {
   grid-template-columns: 1fr;
-  /* grid-template-rows: 1fr 1fr 1fr; */
-  /* gap: 4rem; */
   padding-top: 1rem;
 }
 
@@ -398,12 +365,10 @@ h1:nth-child(2) {
 
 .price_card:nth-child(2) .text {
   padding-top: 0;
-  /* gap: 1.8rem; */
 }
 
 .price_card:nth-child(3) .text {
   padding-top: 1rem;
-  /* gap: 1.3rem; */
 }
 
 .price_card h3 {
@@ -502,15 +467,6 @@ h1:nth-child(2) {
   white-space: nowrap;
 }
 
-.sidebar_head .close_menu {
-  background-image: url(../img/close.svg);
-  width: 34px;
-  height: 34px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  border: none;
-  background-color: transparent;
-}
 
 .sidebar ul {
   display: flex;

@@ -9,8 +9,9 @@
 .menu_button {
   display: inline-block;
   background-image: url(../img/767/menu.svg);
-  margin-top: 0.6rem;
-  width: 30px;
+  margin-top: 0;
+  margin-right: 5%;
+  width: 44px;
   height: 100%;
 }
 
@@ -104,12 +105,6 @@ p {
 
 .skills .cards .card .text {
   height: auto !important;
-  /* margin-top: 0 !important;
-  padding: 0 5%; */
-}
-
-.skills .cards .card .text>* {
-  /* margin-top: 0 !important; */
 }
 
 .skills .cards .card:nth-child(1) .text {
@@ -124,7 +119,6 @@ p {
 
 .skills .cards .card button {
   font-size: 16px;
-  /* margin-top: 0 !important; */
   padding: 0;
   width: 90%;
   height: 50px;
@@ -340,6 +334,39 @@ p {
 
 .footer ul li a {
   font-size: 13px;
+}
+
+.sidebar {
+  width: 56%;
+  margin: 0;
+}
+
+.sidebar_head {
+  height: auto;
+  padding-top: 2.5rem;
+  padding-bottom: 1.1rem;
+  width: 94%;
+  margin-left: 6%;
+}
+
+.sidebar_ul {
+  margin-left: 6%;
+  width: 94.5%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.7rem;
+  margin-top: 3.1rem;
+}
+
+.sidebar_button {
+  margin-top: 4.6rem;
+  width: 53%;
+  align-self: flex-start;
+  margin-left: 6%;
+}
+
+.menu_checkbox:checked~.sidebar {
+  right: 44%;
 }
 
 @media screen and (max-width: 700px) {

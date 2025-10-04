@@ -72,7 +72,6 @@ p {
 .get_started h1 {
   max-width: none;
   width: 100%;
-  /* text-align: center; */
 }
 
 .get_started h1 span {
@@ -292,7 +291,6 @@ p {
 
 .price_cards {
   grid-template-columns: 1fr;
-  /* grid-template-rows: 1fr 1fr 1fr; */
   gap: 4.5rem;
 }
 
@@ -409,6 +407,49 @@ p {
 
 .footer ul li a {
   font-size: 12px;
+}
+
+.sidebar_head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #c4c4c4;
+  height: 17%;
+  width: 92%;
+  margin: 0 auto;
+}
+
+.sidebar_ul {
+  display: flex;
+  gap: 1.9rem;
+  flex-direction: column;
+  width: 92%;
+  margin: 3rem auto 0;
+}
+
+.sidebar_ul li a {
+  font-size: 24px;
+}
+
+.sidebar_button {
+  margin-top: 6rem;
+  width: 60%;
+  margin-left: 4%;
+}
+
+.sidebar_head .close_menu {
+  width: 39px;
+  height: 39px;
+}
+
+.menu_button {
+  display: inline-block;
+  width: 41.5px;
+  height: 35px;
+  margin-right: 3%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(../img/575/menu.svg);
 }
 
 @media screen and (max-width: 470px) {
